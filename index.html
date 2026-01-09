@@ -3,61 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Silva | Advocacia Especializada</title>
+    <title>Dra. Claudinea Gomes | Advocacia Especializada</title>
+    
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="corpo_pagina">
 
-    <header class="cabecalho_principal">
-        <div class="container_limite">
-            <div class="logo_marca">SILVA ADVOCACIA</div>
+    <header class="cabecalho_principal" id="header">
+        <div class="container_limite container_flex">
+            <div class="area_logo">
+                <span class="texto_logo">CLAUDINEA GOMES</span>
+            </div>
+
             <nav class="navegacao_topo">
-                <a href="#areas" class="link_menu">Atuação</a>
+                <a href="#inicio" class="link_menu">Início</a>
                 <a href="#sobre" class="link_menu">Sobre</a>
+                <a href="#areas" class="link_menu">Atuação</a>
                 <a href="#contato" class="botao_destaque">Fale Conosco</a>
             </nav>
         </div>
     </header>
 
-    <section class="secao_hero">
-        <div class="container_limite conteudo_hero">
-            <h1 class="titulo_hero">Defesa estratégica para o seu patrimônio e família.</h1>
-            <p class="subtitulo_hero">Advocacia moderna com a tradição e segurança que você precisa.</p>
-            <a href="https://wa.me/5511999999999" class="botao_acao_hero">Agendar Consulta</a>
+    <section id="inicio" class="secao_hero">
+        <div class="overlay_hero"></div>
+        <div class="container_limite conteudo_hero animar_scroll">
+            <p class="pre_titulo">ADVOCACIA E CONSULTORIA JURÍDICA</p>
+            <h1 class="titulo_hero">Compromisso com a defesa dos seus direitos.</h1>
+            <p class="subtitulo_hero">Soluções jurídicas inteligentes e personalizadas para proteger o que é mais importante para você.</p>
+            <div class="botoes_hero">
+                <a href="https://wa.me/5511999999999" class="botao_acao_hero">Agendar Consulta</a>
+                <a href="#areas" class="botao_secundario">Ver Áreas</a>
+            </div>
         </div>
     </section>
 
     <section id="sobre" class="secao_sobre">
+        <div class="container_limite grid_sobre">
+            <div class="coluna_imagem animar_scroll">
+                <div class="moldura_foto">
+                    <img src="image.png" alt="Dra. Claudinea Gomes" class="foto_perfil">
+                </div>
+            </div>
+            <div class="coluna_texto animar_scroll">
+                <h2 class="titulo_secao">Sobre a Dra. Claudinea Gomes</h2>
+                <div class="linha_destaque"></div>
+                <p class="texto_corrido">
+                    Com sólida formação acadêmica e anos de experiência prática, a Dra. Claudinea Gomes construiu uma carreira pautada na ética, transparência e combatividade.
+                </p>
+                <p class="texto_corrido">
+                    Entendemos que cada caso carrega uma história de vida. Nosso escritório não lida apenas com processos, mas com pessoas, angústias e expectativas, oferecendo um atendimento humanizado e estratégico.
+                </p>
+                
+                <div class="lista_diferenciais">
+                    <div class="item_diferencial">
+                        <i class="fa-solid fa-check icone_diferencial"></i>
+                        <span>Atendimento Personalizado</span>
+                    </div>
+                    <div class="item_diferencial">
+                        <i class="fa-solid fa-check icone_diferencial"></i>
+                        <span>Agilidade Processual</span>
+                    </div>
+                    <div class="item_diferencial">
+                        <i class="fa-solid fa-check icone_diferencial"></i>
+                        <span>Sigilo Absoluto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="areas" class="secao_atuacao">
         <div class="container_limite">
-            <h2 class="titulo_secao">Sobre o Escritório</h2>
-            <p class="texto_corrido">
-                Com mais de 15 anos de experiência, nosso escritório preza pela ética e pela resolução ágil de conflitos.
-                Entendemos que por trás de cada processo existe uma vida e uma história a ser respeitada.
-            </p>
+            <div class="cabecalho_secao animar_scroll">
+                <h2 class="titulo_secao_centro">Áreas de Atuação</h2>
+                <p class="subtitulo_secao">Especialidades jurídicas para atender sua necessidade</p>
+            </div>
+
+            <div class="grid_cards">
+                <div class="card_servico animar_scroll">
+                    <div class="icone_card">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="titulo_card">Direito Civil</h3>
+                    <p class="texto_card">Resolução de conflitos, contratos, responsabilidade civil e indenizações.</p>
+                </div>
+
+                <div class="card_servico animar_scroll">
+                    <div class="icone_card">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="titulo_card">Direito de Família</h3>
+                    <p class="texto_card">Divórcios, pensão alimentícia, guarda, inventários e planejamento sucessório.</p>
+                </div>
+
+                <div class="card_servico animar_scroll">
+                    <div class="icone_card">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="titulo_card">Direito Trabalhista</h3>
+                    <p class="texto_card">Defesa dos direitos do trabalhador e assessoria preventiva para empresas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="secao_contato">
+        <div class="container_limite">
+            <div class="box_contato animar_scroll">
+                <h2 class="titulo_contato">Vamos conversar sobre o seu caso?</h2>
+                <p class="texto_contato">Entre em contato pelo WhatsApp para um retorno imediato ou envie um e-mail.</p>
+                <a href="https://wa.me/5511999999999" class="botao_whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Iniciar Atendimento no WhatsApp
+                </a>
+            </div>
         </div>
     </section>
 
     <footer class="rodape_pagina">
-        <div class="container_limite">
-            <p class="texto_rodape">© 2025 Silva Advocacia - Todos os direitos reservados.</p>
+        <div class="container_limite container_rodape">
+            <div class="info_rodape">
+                <h4>Claudinea Gomes Advocacia</h4>
+                <p>OAB/SP 000.000</p>
+            </div>
+            <div class="direitos_rodape">
+                <p>© 2025 Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 
     <script>
-        /**
-         * Adiciona um efeito de rolagem suave ao clicar nos links do menu.
-         * * @param {Event} evento_clique O evento de clique do mouse.
-         */
-        function rolar_suave(evento_clique) {
-            // Lógica simples de scroll seria implementada aqui se não fosse nativo do CSS
-            console.log("Navegação iniciada");
-        }
-        
-        const links_menu = document.querySelectorAll('.link_menu');
-        links_menu.forEach(link => {
-            link.addEventListener('click', rolar_suave);
+        // Observador de Interseção para animar elementos quando aparecem na tela
+        const observador = new IntersectionObserver((entradas) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add('visivel');
+                }
+            });
+        }, {
+            threshold: 0.1 // Dispara quando 10% do elemento estiver visível
         });
+
+        const elementos_animados = document.querySelectorAll('.animar_scroll');
+        elementos_animados.forEach((el) => observador.observe(el));
     </script>
 </body>
 </html>
