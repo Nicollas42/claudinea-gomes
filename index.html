@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Silva | Advocacia Especializada</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="corpo_pagina">
+
+    <header class="cabecalho_principal">
+        <div class="container_limite">
+            <div class="logo_marca">SILVA ADVOCACIA</div>
+            <nav class="navegacao_topo">
+                <a href="#areas" class="link_menu">Atuação</a>
+                <a href="#sobre" class="link_menu">Sobre</a>
+                <a href="#contato" class="botao_destaque">Fale Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="secao_hero">
+        <div class="container_limite conteudo_hero">
+            <h1 class="titulo_hero">Defesa estratégica para o seu patrimônio e família.</h1>
+            <p class="subtitulo_hero">Advocacia moderna com a tradição e segurança que você precisa.</p>
+            <a href="https://wa.me/5511999999999" class="botao_acao_hero">Agendar Consulta</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="secao_sobre">
+        <div class="container_limite">
+            <h2 class="titulo_secao">Sobre o Escritório</h2>
+            <p class="texto_corrido">
+                Com mais de 15 anos de experiência, nosso escritório preza pela ética e pela resolução ágil de conflitos.
+                Entendemos que por trás de cada processo existe uma vida e uma história a ser respeitada.
+            </p>
+        </div>
+    </section>
+
+    <footer class="rodape_pagina">
+        <div class="container_limite">
+            <p class="texto_rodape">© 2025 Silva Advocacia - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        /**
+         * Adiciona um efeito de rolagem suave ao clicar nos links do menu.
+         * * @param {Event} evento_clique O evento de clique do mouse.
+         */
+        function rolar_suave(evento_clique) {
+            // Lógica simples de scroll seria implementada aqui se não fosse nativo do CSS
+            console.log("Navegação iniciada");
+        }
+        
+        const links_menu = document.querySelectorAll('.link_menu');
+        links_menu.forEach(link => {
+            link.addEventListener('click', rolar_suave);
+        });
+    </script>
+</body>
+</html>
